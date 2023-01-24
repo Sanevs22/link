@@ -6,6 +6,7 @@
 
 body {
     background-color: #EAE5DF;
+    margin: 0;
 }
 
 a {
@@ -40,7 +41,14 @@ p {
     padding: 3px;
 }
 
+
 video {
+    width: 138px;
+    height: 138px;
+    border-radius: 30px;
+}
+
+img {
     width: 138px;
     height: 138px;
     border-radius: 30px;
