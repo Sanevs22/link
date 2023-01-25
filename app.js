@@ -7,17 +7,7 @@ http.createServer(function(request, response){
     response.setHeader("Content-Type", "text/html; charset=utf-8;");
      
     if(request.url === "/home" || request.url === "/"){
-        fs.access(__dirname + "/index.html", fs.constants.R_OK, err => {
-            // если произошла ошибка - отправляем статусный код 404
-            if(err){
-                response.statusCode = 404;
-                response.end("Resourse not found!");
-            }
-            else{
-                fs.createReadStream(filePath).pipe(response);
-            }
-          });
-
+        response.write("<h2>Home</h2>");
     }
     else if(request.url == "/about"){
         response.write("<h2>About</h2>");
