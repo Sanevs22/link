@@ -46,6 +46,7 @@ video {
     width: 138px;
     height: 138px;
     border-radius: 30px;
+    visibility: hidden;
 }
 
 img {
@@ -58,14 +59,16 @@ img {
     width: 370px;
     min-height: 70px;
     margin-top: 25px;
+    margin-bottom: 50px;
     padding: 20px;
+    position: relative;
 }
 
 .link {
     font-weight: 700;
     font-size: 20px;
     width: 370px;
-    margin-top: 25px;
+    margin-top: 15px;
     padding: 20px;
     text-align: center;
 }
@@ -76,3 +79,28 @@ img {
 }
 
 
+
+
+.obj {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: -165px;
+    font-size: 40px;
+    animation: stars 5s infinite linear;
+}
+
+.obj:hover {
+    animation: stars 2s infinite linear;
+
+}
+
+@keyframes stars {
+    from {
+        transform: rotate(0deg);      }
+      to {
+        transform: rotate(360deg);
+      }
+}
