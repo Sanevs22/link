@@ -6,7 +6,8 @@ http.createServer(function(request, response){
     console.log(`Запрошенный адрес: ${request.url}`);
     // получаем путь после слеша
     const filePath = request.url.substr(1);
-    fs.readFile("/index.html", function(error, data){
+    console.log("TEeeeeee"+filePath);
+    fs.readFile("index.html", function(error, data){
               
         if(error){
                   
