@@ -18,5 +18,5 @@ http.createServer(function(request, response){
         }
     });
 }).listen(80, function(){
-    console.log("Server started at 3000");
+    console.log("Server started at 80");
 });
