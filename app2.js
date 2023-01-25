@@ -5,9 +5,14 @@ http.createServer(function(request, response){
       
     console.log(`Запрошенный адрес: ${request.url}`);
     // получаем путь после слеша
+    
+    if(request.url === "/"){
+        request.url = "/index.html";
+    }
+
     const filePath = request.url.substr(1);
-    console.log("TEeeeeee"+filePath);
-    fs.readFile("index.html", function(error, data){
+
+    fs.readFile(filePath, function(error, data){
               
         if(error){
                   
