@@ -10,8 +10,12 @@ body {
 }
 
 a {
+    display: block;
+    width: 370px;
     text-decoration: none;
     color: #000000;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -67,7 +71,6 @@ img {
 .link {
     font-weight: 700;
     font-size: 20px;
-    width: 370px;
     margin-top: 15px;
     padding: 20px;
     text-align: center;
